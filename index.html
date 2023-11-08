@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/1226568128.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS Links -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>IMDB</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar -->
+
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="" />
+        </div>
+        <ul class="menu">
+          <li class="home-page">Home</li>
+          <li class="fav-page">Favourite</li>
+        </ul>
+      </nav>
+
+      <!-- Homepage -->
+
+      <div class="homepage">
+        <!-- Animated Logo  -->
+
+        <div class="content-wrapper">
+          <div class="content">
+            <h2>IMDb</h2>
+            <h2>IMDb</h2>
+          </div>
+        </div>
+
+        <!-- Search Bar -->
+
+        <div class="search">
+          <input id="searchbar" type="text" placeholder="Search Movies..." />
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <!-- Search List -->
+
+        <div class="search-result">
+          <ul id="search-list"></ul>
+        </div>
+      </div>
+
+      <!-- Favourite Section -->
+
+      <div class="favourite hide">
+        <h1 class="fav-title">Favourite movies</h1>
+
+        <!-- Favourite list items -->
+
+        <div class="fav-list"></div>
+      </div>
+
+      <!-- Movie Details page -->
+
+      <div class="movie-details hide"></div>
+    </div>
+
+    <!-- JS Links -->
+
+    <script src="script.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
+  </body>
+</html>
