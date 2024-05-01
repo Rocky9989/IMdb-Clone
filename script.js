@@ -97,7 +97,7 @@ function renderMovies(movieList) {
     list.innerHTML = "";
     let li = document.createElement("li");
     li.classList.add("no-result");
-    li.innerHTML = `<h2>No Result found</h2>`;
+    li.innerHTML = "<h2>No Result found</h2>";
     list.appendChild(li);
   }
 }
@@ -199,7 +199,7 @@ function addToFavourite(id) {
 
     localStorage.removeItem(id);
 
-    like.innerHTML = `<i class="fa-regular fa-heart fa-lg"></i>`;
+    like.innerHTML = '<i class="fa-regular fa-heart fa-lg"></i>';
 
     Toastify({
       text: "Removed from favourites!",
@@ -219,7 +219,7 @@ function addToFavourite(id) {
     localStorage.setItem(id, serializedNewFavMovie);
 
     favouriteList.push(newFavMovie);
-    like.innerHTML = `<i class="fa-solid fa-heart" style="color: #f8f9fa;"></i>`;
+    like.innerHTML = '<i class="fa-solid fa-heart" style="color: #f8f9fa;"></i>';
     Toastify({
       text: "Added to favourites!",
       duration: 2000,
